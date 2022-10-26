@@ -1,7 +1,7 @@
 import {createSlice} from '@reduxjs/toolkit';
-import { retrieveBugs } from '../bugController';
+import  {retrieveBugs}  from '../bugController';
 
-import {retrieveBugs} from '..bugController/;'
+
 const slice = createSlice({
     name:'error',
     initialState: [],

@@ -10,7 +10,7 @@ import userReducer from "./controllers/redux/userSlice";
 
 const reducer = combineReducers({
     auth:authReducer,
-    bug:bugReducer,
+    error:errorReducer,
     user: userReducer
 });
 
@@ -18,7 +18,7 @@ const store = configureStore({reducer});
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-<Provider>
+<Provider store={store}>
     <App />
     </Provider>
 )
